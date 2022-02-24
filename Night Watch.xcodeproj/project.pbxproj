@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7930D5827C8203100EF700B /* Night_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D5727C8203100EF700B /* Night_WatchApp.swift */; };
+		F7930D5A27C8203100EF700B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D5927C8203100EF700B /* ContentView.swift */; };
+		F7930D5C27C8203300EF700B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7930D5B27C8203300EF700B /* Assets.xcassets */; };
+		F7930D5F27C8203300EF700B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7930D5E27C8203300EF700B /* Preview Assets.xcassets */; };
+		F7930D6927C8203300EF700B /* Night_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D6827C8203300EF700B /* Night_WatchTests.swift */; };
+		F7930D7327C8203300EF700B /* Night_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D7227C8203300EF700B /* Night_WatchUITests.swift */; };
+		F7930D7527C8203300EF700B /* Night_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D7427C8203300EF700B /* Night_WatchUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7930D6527C8203300EF700B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7930D4C27C8203100EF700B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7930D5327C8203100EF700B;
+			remoteInfo = "Night Watch";
+		};
+		F7930D6F27C8203300EF700B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7930D4C27C8203100EF700B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7930D5327C8203100EF700B;
+			remoteInfo = "Night Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7930D5427C8203100EF700B /* Night Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7930D5727C8203100EF700B /* Night_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchApp.swift; sourceTree = "<group>"; };
+		F7930D5927C8203100EF700B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7930D5B27C8203300EF700B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7930D5E27C8203300EF700B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7930D6427C8203300EF700B /* Night WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7930D6827C8203300EF700B /* Night_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchTests.swift; sourceTree = "<group>"; };
+		F7930D6E27C8203300EF700B /* Night WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7930D7227C8203300EF700B /* Night_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchUITests.swift; sourceTree = "<group>"; };
+		F7930D7427C8203300EF700B /* Night_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7930D5127C8203100EF700B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6127C8203300EF700B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6B27C8203300EF700B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7930D4B27C8203100EF700B = {
+			isa = PBXGroup;
+			children = (
+				F7930D5627C8203100EF700B /* Night Watch */,
+				F7930D6727C8203300EF700B /* Night WatchTests */,
+				F7930D7127C8203300EF700B /* Night WatchUITests */,
+				F7930D5527C8203100EF700B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7930D5527C8203100EF700B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D5427C8203100EF700B /* Night Watch.app */,
+				F7930D6427C8203300EF700B /* Night WatchTests.xctest */,
+				F7930D6E27C8203300EF700B /* Night WatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7930D5627C8203100EF700B /* Night Watch */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D5727C8203100EF700B /* Night_WatchApp.swift */,
+				F7930D5927C8203100EF700B /* ContentView.swift */,
+				F7930D5B27C8203300EF700B /* Assets.xcassets */,
+				F7930D5D27C8203300EF700B /* Preview Content */,
+			);
+			path = "Night Watch";
+			sourceTree = "<group>";
+		};
+		F7930D5D27C8203300EF700B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D5E27C8203300EF700B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7930D6727C8203300EF700B /* Night WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D6827C8203300EF700B /* Night_WatchTests.swift */,
+			);
+			path = "Night WatchTests";
+			sourceTree = "<group>";
+		};
+		F7930D7127C8203300EF700B /* Night WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D7227C8203300EF700B /* Night_WatchUITests.swift */,
+				F7930D7427C8203300EF700B /* Night_WatchUITestsLaunchTests.swift */,
+			);
+			path = "Night WatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7930D5327C8203100EF700B /* Night Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7930D7827C8203300EF700B /* Build configuration list for PBXNativeTarget "Night Watch" */;
+			buildPhases = (
+				F7930D5027C8203100EF700B /* Sources */,
+				F7930D5127C8203100EF700B /* Frameworks */,
+				F7930D5227C8203100EF700B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Night Watch";
+			productName = "Night Watch";
+			productReference = F7930D5427C8203100EF700B /* Night Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7930D6327C8203300EF700B /* Night WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7930D7B27C8203300EF700B /* Build configuration list for PBXNativeTarget "Night WatchTests" */;
+			buildPhases = (
+				F7930D6027C8203300EF700B /* Sources */,
+				F7930D6127C8203300EF700B /* Frameworks */,
+				F7930D6227C8203300EF700B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7930D6627C8203300EF700B /* PBXTargetDependency */,
+			);
+			name = "Night WatchTests";
+			productName = "Night WatchTests";
+			productReference = F7930D6427C8203300EF700B /* Night WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7930D6D27C8203300EF700B /* Night WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7930D7E27C8203300EF700B /* Build configuration list for PBXNativeTarget "Night WatchUITests" */;
+			buildPhases = (
+				F7930D6A27C8203300EF700B /* Sources */,
+				F7930D6B27C8203300EF700B /* Frameworks */,
+				F7930D6C27C8203300EF700B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7930D7027C8203300EF700B /* PBXTargetDependency */,
+			);
+			name = "Night WatchUITests";
+			productName = "Night WatchUITests";
+			productReference = F7930D6E27C8203300EF700B /* Night WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7930D4C27C8203100EF700B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F7930D5327C8203100EF700B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F7930D6327C8203300EF700B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F7930D5327C8203100EF700B;
+					};
+					F7930D6D27C8203300EF700B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F7930D5327C8203100EF700B;
+					};
+				};
+			};
+			buildConfigurationList = F7930D4F27C8203100EF700B /* Build configuration list for PBXProject "Night Watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7930D4B27C8203100EF700B;
+			productRefGroup = F7930D5527C8203100EF700B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7930D5327C8203100EF700B /* Night Watch */,
+				F7930D6327C8203300EF700B /* Night WatchTests */,
+				F7930D6D27C8203300EF700B /* Night WatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7930D5227C8203100EF700B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930D5F27C8203300EF700B /* Preview Assets.xcassets in Resources */,
+				F7930D5C27C8203300EF700B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6227C8203300EF700B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6C27C8203300EF700B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7930D5027C8203100EF700B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930D5A27C8203100EF700B /* ContentView.swift in Sources */,
+				F7930D5827C8203100EF700B /* Night_WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6027C8203300EF700B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930D6927C8203300EF700B /* Night_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7930D6A27C8203300EF700B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930D7327C8203300EF700B /* Night_WatchUITests.swift in Sources */,
+				F7930D7527C8203300EF700B /* Night_WatchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7930D6627C8203300EF700B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7930D5327C8203100EF700B /* Night Watch */;
+			targetProxy = F7930D6527C8203300EF700B /* PBXContainerItemProxy */;
+		};
+		F7930D7027C8203300EF700B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7930D5327C8203100EF700B /* Night Watch */;
+			targetProxy = F7930D6F27C8203300EF700B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7930D7627C8203300EF700B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7930D7727C8203300EF700B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7930D7927C8203300EF700B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Night Watch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7930D7A27C8203300EF700B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Night Watch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7930D7C27C8203300EF700B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Night Watch.app/Night Watch";
+			};
+			name = Debug;
+		};
+		F7930D7D27C8203300EF700B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Night Watch.app/Night Watch";
+			};
+			name = Release;
+		};
+		F7930D7F27C8203300EF700B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Night Watch";
+			};
+			name = Debug;
+		};
+		F7930D8027C8203300EF700B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.Night-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Night Watch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7930D4F27C8203100EF700B /* Build configuration list for PBXProject "Night Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930D7627C8203300EF700B /* Debug */,
+				F7930D7727C8203300EF700B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7930D7827C8203300EF700B /* Build configuration list for PBXNativeTarget "Night Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930D7927C8203300EF700B /* Debug */,
+				F7930D7A27C8203300EF700B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7930D7B27C8203300EF700B /* Build configuration list for PBXNativeTarget "Night WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930D7C27C8203300EF700B /* Debug */,
+				F7930D7D27C8203300EF700B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7930D7E27C8203300EF700B /* Build configuration list for PBXNativeTarget "Night WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930D7F27C8203300EF700B /* Debug */,
+				F7930D8027C8203300EF700B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7930D4C27C8203100EF700B /* Project object */;
+}
