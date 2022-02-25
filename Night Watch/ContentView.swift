@@ -18,28 +18,77 @@ struct ContentView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Nightly Tasks")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.green)
-                        .textCase(.uppercase)
-                    Text("Check all windows")
-                    Text("Check all doors")
-                    Text("Check that the safe is locked")
-                    Text("Check the mailbox")
-                    Text("Inspect security cameras")
-                    Text("Clear ice from sidewalks")
-                    Text("Document \"strange and unusual\" occurances")
-                    Text("Weekly Tasks")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.green)
-                        .textCase(.uppercase)
-                    Text("Monthly Tasks")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.green)
-                        .textCase(.uppercase)
+                    
+                    // MARK: Nightly Tasks
+                    Group {
+                        VStack(alignment: .leading) {
+                            HStack(alignment: .bottom) {
+                                Text(Image(systemName: "moon.stars"))
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                                Text("Nightly Tasks")
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                            }
+                            .padding(.bottom, 1.0)
+                            
+                            Text("Check all windows")
+                            Text("Check all doors")
+                            Text("Check that the safe is locked")
+                            Text("Check the mailbox")
+                            Text("Inspect security cameras")
+                            Text("Clear ice from sidewalks")
+                            Text("Document \"strange and unusual\" occurences")
+                            
+                        }
+                    }
+                    Group() {
+                        VStack(alignment: .leading) {
+                            HStack(alignment: .bottom) {
+                                Text(Image(systemName: "sunset"))
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                                Text("Weekly Tasks")
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                            }
+                            .padding(.bottom, 1.0)
+                            Text("stuff")
+                            
+                        }
+                        .padding(.bottom)
+                    }
+                    Group {
+                        VStack(alignment: .leading) {
+                            HStack(alignment: .bottom) {
+                                Text(Image(systemName: "calendar"))
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                                Text("Monthly Tasks")
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                                    .textCase(.uppercase)
+                            }
+                            .padding(.bottom, 1.0)
+                            
+                            
+                        }
+                    }
+                    
+                    
+                    
+                    
                 }
                 .foregroundColor(.gray)
                 Spacer()
@@ -48,8 +97,8 @@ struct ContentView: View {
             Spacer()
         }
         
-        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
