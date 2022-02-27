@@ -7,6 +7,27 @@
 
 import SwiftUI
 
+let nightlyTasks = [
+    "Check all windows",
+    "Check all doors",
+    "Check that the safe is locked",
+    "Check the mailbox"
+    
+]
+
+let weeklyTasks = [
+    "Check the sports scores",
+    "Kick out squatters",
+    "Get bats out of fireplaces",
+    "Document \"strange and unusual\" occurences"
+]
+
+let monthlyTasks = [
+    "Check the sports scores",
+    "Kick out squatters",
+    "Get bats out of fireplaces"
+]
+
 struct ContentView: View {
     
     //"safe area" is the space on screen minus any notches or status bars on the screen
@@ -14,91 +35,36 @@ struct ContentView: View {
     // body must return ONE instance of some kind of view
     var body: some View {
         
-        // combine views together into layout containers, and view returns one parent container
-        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    
-                    // MARK: Nightly Tasks
-                    Group {
-                        VStack(alignment: .leading) {
-                            HStack(alignment: .bottom) {
-                                Text(Image(systemName: "moon.stars"))
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                                Text("Nightly Tasks")
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                            }
-                            .padding(.bottom, 1.0)
-                            
-                            Text("Check all windows")
-                            Text("Check all doors")
-                            Text("Check that the safe is locked")
-                            Text("Check the mailbox")
-                            Text("Inspect security cameras")
-                            Text("Clear ice from sidewalks")
-                            Text("Document \"strange and unusual\" occurences")
-                            
-                        }
-                    }
-                    Group() {
-                        VStack(alignment: .leading) {
-                            HStack(alignment: .bottom) {
-                                Text(Image(systemName: "sunset"))
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                                Text("Weekly Tasks")
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                            }
-                            .padding(.bottom, 1.0)
-                            Text("stuff")
-                            
-                        }
-                        .padding(.bottom)
-                    }
-                    Group {
-                        VStack(alignment: .leading) {
-                            HStack(alignment: .bottom) {
-                                Text(Image(systemName: "calendar"))
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                                Text("Monthly Tasks")
-                                    .font(.title3)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.green)
-                                    .textCase(.uppercase)
-                            }
-                            .padding(.bottom, 1.0)
-                            
-                            
-                        }
+            
+        NavigationView {
+            List {
+                Section(header: TaskSectionHeader(symbolSystemName: "moon.stars", headerText: "Nightly Tasks")) {
+                        ForEach(nightlyTasks, id: \.self, content: {
+                            taskName in
+                            NavigationLink(taskName, destination: DetailsView(taskName: taskName))
+                        })
                     }
                     
+                    Section(header: TaskSectionHeader(symbolSystemName: "sunset", headerText: "Weekly Tasks"))  {
+                        ForEach(weeklyTasks, id: \.self, content: {
+                            taskName in
+                            NavigationLink(taskName, destination: Text(taskName))
+                        })
+                    }
                     
-                    
-                    
-                }
-                .foregroundColor(.gray)
-                Spacer()
+                    Section(header: TaskSectionHeader(symbolSystemName: "calendar", headerText: "Monthly Tasks"))  {
+                        ForEach(monthlyTasks, id: \.self, content: {
+                            taskName in
+                            NavigationLink(taskName, destination: Text(taskName))
+                        })
+                    }
             }
-            .padding([.top, .leading])
-            Spacer()
+            .listStyle(GroupedListStyle())
+            .navigationTitle("Home")
         }
         
-    }
     
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -107,3 +73,16 @@ struct ContentView_Previews: PreviewProvider {
 .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
+
+struct TaskSectionHeader: View {
+    let symbolSystemName: String
+    let headerText: String
+    var body: some View {
+        HStack {
+            Image(systemName: symbolSystemName)
+            Text(headerText)
+        }
+        .font(.title3)
+    }
+}
+
