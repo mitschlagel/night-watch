@@ -15,6 +15,7 @@
 		F7930D7327C8203300EF700B /* Night_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D7227C8203300EF700B /* Night_WatchUITests.swift */; };
 		F7930D7527C8203300EF700B /* Night_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D7427C8203300EF700B /* Night_WatchUITestsLaunchTests.swift */; };
 		F7930D8227CC3DE300EF700B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D8127CC3DE300EF700B /* DetailsView.swift */; };
+		F7930D8427CC43C900EF700B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D8327CC43C900EF700B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F7930D7227C8203300EF700B /* Night_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchUITests.swift; sourceTree = "<group>"; };
 		F7930D7427C8203300EF700B /* Night_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F7930D8127CC3DE300EF700B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		F7930D8327CC43C900EF700B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +100,10 @@
 			children = (
 				F7930D5727C8203100EF700B /* Night_WatchApp.swift */,
 				F7930D5927C8203100EF700B /* ContentView.swift */,
+				F7930D8127CC3DE300EF700B /* DetailsView.swift */,
 				F7930D5B27C8203300EF700B /* Assets.xcassets */,
 				F7930D5D27C8203300EF700B /* Preview Content */,
-				F7930D8127CC3DE300EF700B /* DetailsView.swift */,
+				F7930D8327CC43C900EF700B /* HomeView.swift */,
 			);
 			path = "Night Watch";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7930D5A27C8203100EF700B /* ContentView.swift in Sources */,
+				F7930D8427CC43C900EF700B /* HomeView.swift in Sources */,
 				F7930D5827C8203100EF700B /* Night_WatchApp.swift in Sources */,
 				F7930D8227CC3DE300EF700B /* DetailsView.swift in Sources */,
 			);

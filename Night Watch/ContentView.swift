@@ -34,34 +34,22 @@ struct ContentView: View {
     
     // body must return ONE instance of some kind of view
     var body: some View {
-        
-            
-        NavigationView {
-            List {
-                Section(header: TaskSectionHeader(symbolSystemName: "moon.stars", headerText: "Nightly Tasks")) {
-                        ForEach(nightlyTasks, id: \.self, content: {
-                            taskName in
-                            NavigationLink(taskName, destination: DetailsView(taskName: taskName))
-                        })
-                    }
-                    
-                    Section(header: TaskSectionHeader(symbolSystemName: "sunset", headerText: "Weekly Tasks"))  {
-                        ForEach(weeklyTasks, id: \.self, content: {
-                            taskName in
-                            NavigationLink(taskName, destination: Text(taskName))
-                        })
-                    }
-                    
-                    Section(header: TaskSectionHeader(symbolSystemName: "calendar", headerText: "Monthly Tasks"))  {
-                        ForEach(monthlyTasks, id: \.self, content: {
-                            taskName in
-                            NavigationLink(taskName, destination: Text(taskName))
-                        })
-                    }
+        TabView {
+            HomeView().tabItem {
+                Text("Home")
+                Image(systemName: "house")
             }
-            .listStyle(GroupedListStyle())
-            .navigationTitle("Home")
+            MapView().tabItem {
+                Text("Map")
+                Image(systemName: "map")
+            }
+            SettingsView().tabItem {
+                Text("Settings")
+                Image(systemName: "gear")
+            }
         }
+            
+        
         
     
     }
@@ -70,7 +58,20 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.portraitUpsideDown)
+    }
+}
+
+
+
+struct MapView: View {
+    var body: some View {
+        Text("TODO: build map screen")
+    }
+}
+
+struct SettingsView: View {
+    var body: some View {
+        Text("TODO: build settings screen")
     }
 }
 
